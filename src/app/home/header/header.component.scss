@@ -1,0 +1,60 @@
+nav {
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  z-index: 1030;
+}
+
+ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+ul li:hover {
+  background: #e91e63;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  background: #1d44735e;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  ul {
+    width: 100%;
+    display: none;
+  }
+
+  ul li {
+    display: block;
+    text-align: center;
+    background: #1d44735e;
+  }
+
+  .active {
+    display: block;
+  }
+
+}

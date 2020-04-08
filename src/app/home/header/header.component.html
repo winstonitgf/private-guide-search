@@ -1,0 +1,9 @@
+<nav>
+  <div class="toggle">
+    <i class="fas fa-bars" (click)="menuClick()"></i>
+  </div>
+  <ul [ngClass]="{'active':menuActive}">
+    <li> <a href="#">部落格</a> </li>
+    <li> <a href="#">常見問題</a> </li>
+  </ul>
+</nav>

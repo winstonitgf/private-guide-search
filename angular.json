@@ -122,6 +122,55 @@
               "devServerTarget": "private-guide-search:serve:production"
             }
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/private-guide-search-server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "sourceMap": false,
+              "optimization": {
+                "scripts": false,
+                "styles": true
+              }
+            }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "private-guide-search:build",
+            "serverTarget": "private-guide-search:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "private-guide-search:build:production",
+              "serverTarget": "private-guide-search:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "private-guide-search:build:production",
+            "serverTarget": "private-guide-search:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
+          }
         }
       }
     }},
