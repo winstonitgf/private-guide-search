@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { SectionAComponent } from './home/section-a/section-a.component';
 import { BannerComponent } from './home/banner/banner.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BannerComponent } from './home/banner/banner.component';
     HomeComponent,
     HeaderComponent,
     SectionAComponent,
-    BannerComponent
+    BannerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
