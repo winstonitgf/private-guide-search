@@ -8,6 +8,8 @@ import { HeaderComponent } from './home/header/header.component';
 import { BannerComponent } from './home/banner/banner.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { SectionServicesComponent } from './home/section-services/section-services.component';
+import { SectionProvidersComponent } from './home/section-providers/section-providers.component';
+import { SectionSuccessfulCaseComponent } from './home/section-successful-case/section-successful-case.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SectionServicesComponent } from './home/section-services/section-servic
     HeaderComponent,
     BannerComponent,
     FooterComponent,
-    SectionServicesComponent
+    SectionServicesComponent,
+    SectionProvidersComponent,
+    SectionSuccessfulCaseComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

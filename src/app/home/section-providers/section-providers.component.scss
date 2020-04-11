@@ -1,0 +1,33 @@
+.team-section {
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.inner-width {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  color: #333;
+  overflow: hidden;
+}
+
+.team-section h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.pe {
+  float: left;
+  width: calc(100%/3);
+  overflow: hidden;
+  // padding: 40px 0;
+}
+
+// .pe img{
+//   width: 120px;
+//   height: 120px;
+// }
