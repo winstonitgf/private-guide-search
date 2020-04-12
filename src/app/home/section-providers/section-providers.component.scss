@@ -21,13 +21,25 @@
 }
 
 .pe {
-  float: left;
+  // float: left;
+  // width: calc(100%/3);
+  // overflow: hidden;
+
+  display: inline-block;
   width: calc(100%/3);
-  overflow: hidden;
-  // padding: 40px 0;
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-// .pe img{
-//   width: 120px;
-//   height: 120px;
-// }
+
+@media screen and (max-width:1000px){
+  .pe{
+      width:50%;
+  }
+}
+@media screen and (max-width:800px){
+  .pe{
+      width:100%;
+  }
+}

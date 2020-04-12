@@ -10,6 +10,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { SectionServicesComponent } from './home/section-services/section-services.component';
 import { SectionProvidersComponent } from './home/section-providers/section-providers.component';
 import { SectionSuccessfulCaseComponent } from './home/section-successful-case/section-successful-case.component';
+import { SectionScrollTopComponent } from './section-scroll-top/section-scroll-top.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SectionSuccessfulCaseComponent } from './home/section-successful-case/s
     FooterComponent,
     SectionServicesComponent,
     SectionProvidersComponent,
-    SectionSuccessfulCaseComponent
+    SectionSuccessfulCaseComponent,
+    SectionScrollTopComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
