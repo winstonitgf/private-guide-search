@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-
+  public step = 0;
   public foods = [
     { value: 'steak-0', viewValue: '健談' },
     { value: 'pizza-1', viewValue: '帥氣' },
@@ -18,4 +18,16 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
 }
