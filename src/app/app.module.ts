@@ -11,6 +11,14 @@ import { SectionServicesComponent } from './home/section-services/section-servic
 import { SectionProvidersComponent } from './home/section-providers/section-providers.component';
 import { SectionSuccessfulCaseComponent } from './home/section-successful-case/section-successful-case.component';
 import { SectionScrollTopComponent } from './home/section-scroll-top/section-scroll-top.component';
+import { SearchComponent } from './search/search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -22,11 +30,19 @@ import { SectionScrollTopComponent } from './home/section-scroll-top/section-scr
     SectionServicesComponent,
     SectionProvidersComponent,
     SectionSuccessfulCaseComponent,
-    SectionScrollTopComponent
+    SectionScrollTopComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
