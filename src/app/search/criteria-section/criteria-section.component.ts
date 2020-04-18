@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchService } from '../search.service';
+import { SearchLoadingService } from 'src/app/services/search-loading.service';
 
 @Component({
   selector: 'app-criteria-section',
@@ -12,10 +14,18 @@ export class CriteriaSectionComponent implements OnInit {
     { value: 'pizza-1', viewValue: '帥氣' },
     { value: 'tacos-2', viewValue: '幽默' }
   ];
-  constructor() { }
+  constructor(private searchLoadingService: SearchLoadingService) { }
 
-  public search() { }
   ngOnInit() {
+  }
+
+  public search() {
+    const self = this;
+    self.searchLoadingService.Start();
+
+    setTimeout(() => {
+      self.searchLoadingService.Complete();
+    }, 3000);
   }
 
 }

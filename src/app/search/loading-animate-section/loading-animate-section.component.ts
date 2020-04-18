@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchLoadingService } from 'src/app/services/search-loading.service';
+import { Observable } from 'rxjs/internal/Observable';
 
 @Component({
   selector: 'app-loading-animate-section',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoadingAnimateSectionComponent implements OnInit {
 
-  constructor() { }
+  public isLoading: Observable<boolean>;
+  constructor(public searchLoadingService: SearchLoadingService) {
+    this.isLoading = searchLoadingService.SearchLoadingSubscription();
+  }
 
   ngOnInit() {
   }

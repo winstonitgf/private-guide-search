@@ -11,7 +11,8 @@ export class BannerComponent implements OnInit {
 
   ngOnInit() {
   }
-  test() {
+
+  GoSearchPage() {
     this.router.navigate(['/search']);
   }
 }

@@ -15,8 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
-
-
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -38,6 +37,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatProgressSpinnerModule,
     MatExpansionModule,
     MatIconModule,
+    MatGridListModule
   ],
   exports: [
   ]
