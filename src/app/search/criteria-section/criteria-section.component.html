@@ -1,0 +1,28 @@
+<div class="query-background">
+  <mat-card class="query-card">
+    <div class="query-card-content-section">
+      <mat-form-field>
+        <mat-label>開始日</mat-label>
+        <input matInput [matDatepicker]="startPicker">
+        <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+        <mat-datepicker #startPicker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>結束日</mat-label>
+        <input matInput [matDatepicker]="endPicker">
+        <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+        <mat-datepicker #endPicker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>特色</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button color="warn" (click)="search()">開始查詢</button>
+
+    </div>
+  </mat-card>
+</div>

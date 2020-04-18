@@ -6,28 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  public step = 0;
-  public foods = [
-    { value: 'steak-0', viewValue: '健談' },
-    { value: 'pizza-1', viewValue: '帥氣' },
-    { value: 'tacos-2', viewValue: '幽默' }
-  ];
+  public isLoading;
+
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  // search() {
+  //   const self = this;
+  //   self.isLoading = true;
+  //   setTimeout(function () {
+  //     self.isLoading = false;
+  //   }, 3000);
+  // }
 
-  setStep(index: number) {
-    this.step = index;
-  }
-
-  nextStep() {
-    this.step++;
-  }
-
-  prevStep() {
-    this.step--;
-  }
+ 
 }
