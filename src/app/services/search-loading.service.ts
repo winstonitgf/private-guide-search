@@ -7,16 +7,14 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class SearchLoadingService {
 
-  isLoadingSubject = new BehaviorSubject<boolean>(false);
+  public isLoadingSubject = new BehaviorSubject<boolean>(false);
   constructor() { }
 
   public Start(): void {
-    console.log('start', true);
     this.isLoadingSubject.next(true);
   }
 
   public Complete(): void {
-    console.log('Complete', false);
     this.isLoadingSubject.next(false);
   }
 
