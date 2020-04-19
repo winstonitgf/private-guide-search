@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { SearchModule } from './search/search.module';
+import { ProviderDetailModule } from './provider-detail/provider-detail.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SearchModule } from './search/search.module';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HomeModule,
-    SearchModule
+    SearchModule,
+    ProviderDetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]

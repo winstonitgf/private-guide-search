@@ -1,0 +1,31 @@
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.intro-detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.self-img {
+  flex: 1;
+}
+
+.intro-description {
+  display: flex;
+  justify-content: space-around;
+  line-height: 30px;
+}
+
+.intro-background {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5%;
+}

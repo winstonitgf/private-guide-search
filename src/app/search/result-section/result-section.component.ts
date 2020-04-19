@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-result-section',
@@ -6,20 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-section.component.scss']
 })
 export class ResultSectionComponent implements OnInit {
-  public step = 0;
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-  setStep(index: number) {
-    this.step = index;
-  }
 
-  nextStep() {
-    this.step++;
-  }
-
-  prevStep() {
-    this.step--;
+  showDetail() {
+    this.router.navigate(['/provider-detail']);
   }
 }
